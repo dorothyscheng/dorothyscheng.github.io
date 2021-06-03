@@ -5,12 +5,20 @@ $(window).scroll(() => {
     // if you've scrolled further than the top of main plus it's height
     // change the color. either by adding a class or setting a css property
     if (scroll >= htMain) {
-        $('#header').addClass('white');
-        $('.nav-link').removeClass('white-font');
+        whiteBG();
         $('#projects-link').addClass('featured');
     } else {
-        $('#header').removeClass('white');
-        $('.nav-link').addClass('white-font');
+        blackBG();
         $('#projects-link').removeClass('featured');
     };
 });
+
+whiteBG = () => {
+    $('#header').addClass('white');
+    $('.nav-link').removeClass('white-font');
+};
+
+blackBG = () => {
+    $('#header').removeClass('white');
+    $('.nav-link').addClass('white-font');
+}
