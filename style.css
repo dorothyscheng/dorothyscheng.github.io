@@ -37,7 +37,6 @@ body {
     display: flex;
     width: 45%;
     justify-content: space-between;
-    /* margin: 0 auto; */
 }
 .nav {
     display: flex;
@@ -46,14 +45,10 @@ body {
     font-size: 18px;
 }
 .section {
-    height: 500px;
-    /* width: 80%; */
-    /* margin: 0 auto; */
-    /* background-color: red; */
+    height: 100vh;
 }
 .main {
     height: 100vh;
-    /* background-color: aquamarine; */
 }
 .section-title {
     width: 80%;
