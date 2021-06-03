@@ -41,7 +41,7 @@
                 <ul class="contact-list">
                     <li><a href="https://github.com/dorothyscheng" title="github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/dorothy-s-cheng/" title="linkedin" target="_blank" rel="noopener noreferrer""><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="mailto: cheng.dorothy.s@gmail.com" title="email"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="mailto:cheng.dorothy.s@gmail.com" title="email"><i class="fas fa-envelope"></i></a></li>
                     <li><a href="./assets/DCheng-Resume.pdf" title="resume" download><i class="fas fa-file-download"></i></a></li>
                 </ul>
             </div>
@@ -84,18 +84,51 @@
             </div>
     </section>
     <section id="skills" class="section">
-        <div class="section-content">
-            
+        <div class="section-content flex-column">
+            <h2 class="section-title">Some kind of intro</h2>
+            <div class="flex-row skills">
+                <div class="bold flavor skill-keys">
+                    <ul>
+                        <li>Languages:</li>
+                        <li>Frameworks:</li>
+                        <li>Libraries:</li>
+                        <li>Databases:</li>
+                    </ul>
+                </div>
+                <div class="bold skill-values">
+                    <ul>
+                        <li>JavaScript, Python, HTML5, CSS</li>
+                        <li>Node.js, Express, Django</li>
+                        <li>jQuery, React</li>
+                        <li>MongoDB, PostgreSQL</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="about" class="section white">
+    <section id="about" class="section white black-font">
         <div class="section-content">
-            
+            <h2 class="section-title">More details about me</h2>
         </div>
     </section>
     <section id="contact" class="section">
-        <div class="section-content">
-            
+        <div class="section-content flex-column">
+            <h2 class="section-title">I'd love to hear from you!</h2>
+            <form class="flex-column form" action="https://formspree.io/f/xyylwowe" method="POST">
+                <input type="hidden" name="_subject" value="Contact email submitted" />
+                <label> Name:
+                    <input type="text" name="name">
+                </label>    
+                <label>
+                    Email:
+                    <input type="email" name="_replyto">
+                </label>
+                <label>
+                    Message:
+                    <textarea name="message"></textarea>
+                </label>
+                <button type="submit">Send</button>
+                </form>
         </div>
     </section>
 </body>
