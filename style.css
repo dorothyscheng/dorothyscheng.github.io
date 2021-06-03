@@ -96,6 +96,11 @@ body {
 }
 .project-img {
     width: 500px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+.project-img:hover {
+    border: 2px solid aqua;
 }
 .project {
     display: flex;
@@ -104,7 +109,7 @@ body {
     justify-content: center;
 }
 .project-container {
-    margin-bottom: 37px;
+    margin-bottom: 15px;
     width: 100%;
     display: flex;
 }
@@ -125,3 +130,10 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
+.flavor {
+    font-style: italic;
+}
+/* .bottom-border {
+    border-bottom: 2px solid #000;
+    padding-bottom: 15px;
+} */
