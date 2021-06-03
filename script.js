@@ -1,18 +1,17 @@
 $(window).scroll(() => {
     const scroll = $(window).scrollTop(); 
     const htMain = $('#main').height();
+    const osMain = $('#main').offset().top;
     const htProjects = $('#projects').height();
     const osProjects = $('#projects').offset().top;
     const htSkills = $('#skills').height();
     const osSkills = $('#skills').offset().top;
     const htAbout = $('#about').height();
     const osAbout = $('#about').offset().top;
-    // const htContact = $('#contact').height();
-    // const osContact = $('#contact').offset().top;
-    if (scroll < htMain) {
+    if (scroll < htMain+osMain) {
         blackBG();
         $('#projects-link').removeClass('featured');
-    } else if (scroll >= htMain && scroll < htProjects+osProjects) {
+    } else if (scroll >= htMain+osMain && scroll < htProjects+osProjects) {
         whiteBG();
         $('#projects-link').addClass('featured');
     } else if (scroll >= htProjects+osProjects && scroll < htSkills+osSkills) {
