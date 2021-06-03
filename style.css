@@ -7,10 +7,11 @@
 }
 a {
     text-decoration: none;
-    transition: font-weight .3s;
+    transition: font-weight .3s, color .3s;
 }
 a:hover {
     font-weight: bold;
+    color: aqua;
 }
 ul {
     list-style: none;
@@ -29,7 +30,7 @@ body {
 }
 .header-content {
     display: flex;
-    width: 50%;
+    width: 80%;
     justify-content: space-around;
     margin: 0 auto;
 }
@@ -46,11 +47,16 @@ body {
     /* background-color: red; */
 }
 .main {
-    height: 80vh;
+    height: 100vh;
     /* background-color: aquamarine; */
 }
+.section-title {
+    width: 80%;
+    margin: 0 auto;
+}
 .section-content {
-    margin: 50px;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,7 +74,8 @@ body {
 .contact-list {
     display: flex;
 }
-.fab {
+.fab, .fas {
     margin: 10px;
     font-size: 20px;
+    color: aqua;
 }
