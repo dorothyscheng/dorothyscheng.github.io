@@ -49,7 +49,7 @@
     </section>
     <section id="projects" class="section white project">
         <div class="section-content flex-column">
-            <div class="project-container bottom-border">
+            <div class="project-container">
                 <a href="https://hikecollector.herokuapp.com/" target="_blank" rel="noopener noreferrer"><img class="project-img" src="./assets/images/hike-collector.png" alt="hike-collector screenshot"></a>
                 <div class="project-description">
                     <h2>HikeCollector</h2>
@@ -60,7 +60,7 @@
                     </div>
                 </div>
             </div>
-            <div class="project-container bottom-border">
+            <div class="project-container">
                 <a href="https://fad-game.herokuapp.com/" target="_blank" rel="noopener noreferrer"><img class="project-img" src="./assets/images/fad-games.png" alt="fad-games screenshot"></a>
                 <div class="project-description">
                     <h2>FAD Games</h2>
@@ -74,7 +74,7 @@
             <div class="project-container">
                 <a href="https://dorothyscheng.github.io/tamagotchi-project/" target="_blank" rel="noopener noreferrer"><img class="project-img" src="./assets/images/tamagotchi.png" alt="tamagotchi project screenshot"></a>
                 <div class="project-description">
-                    <h2>Tamagotchi Project</h2>
+                    <h2>Virtual Tamagotchi</h2>
                     <p>Interactive Tamagotchi-inspired web app game in which players care for a virtual pet, featuring several additional nested games, shop with purchasable items which affect game-play, and an end-game maze.</p>
                     <p class="flavor">HTML5, CSS, JavaScript, jQuery</p>
                     <div>
@@ -86,7 +86,7 @@
     <section id="skills" class="section">
         <div class="section-content flex-column">
             <h2 class="section-title">Some kind of intro</h2>
-            <div class="flex-row skills">
+            <div class="flex-row">
                 <div class="bold flavor skill-keys">
                     <ul>
                         <li>Languages:</li>
@@ -116,19 +116,20 @@
             <h2 class="section-title">I'd love to hear from you!</h2>
             <form class="flex-column form" action="https://formspree.io/f/xyylwowe" method="POST">
                 <input type="hidden" name="_subject" value="Contact email submitted" />
-                <label> Name:
-                    <input type="text" name="name">
-                </label>    
-                <label>
-                    Email:
-                    <input type="email" name="_replyto">
-                </label>
-                <label>
-                    Message:
-                    <textarea name="message"></textarea>
-                </label>
+                <label>Name:</label>    
+                <input type="text" name="name">
+                <label>Email:</label>
+                <input type="email" name="_replyto">
+                <label>Message:</label>
+                <textarea name="message"></textarea>
                 <button type="submit">Send</button>
-                </form>
+            </form>
+            <ul class="contact-list">
+                <li><a href="https://github.com/dorothyscheng" title="github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/dorothy-s-cheng/" title="linkedin" target="_blank" rel="noopener noreferrer""><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="mailto:cheng.dorothy.s@gmail.com" title="email"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="./assets/DCheng-Resume.pdf" title="resume" download><i class="fas fa-file-download"></i></a></li>
+            </ul>
         </div>
     </section>
 </body>

@@ -11,7 +11,7 @@ $(window).scroll(() => {
     if (scroll < htMain+osMain) {
         blackBG();
         $('#projects-link').removeClass('featured');
-    } else if (scroll >= htMain+osMain && scroll < htProjects+osProjects) {
+    } else if (scroll >= htMain && scroll < htProjects+osProjects) {
         whiteBG();
         $('#projects-link').addClass('featured');
     } else if (scroll >= htProjects+osProjects && scroll < htSkills+osSkills) {
