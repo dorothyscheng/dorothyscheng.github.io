@@ -82,8 +82,8 @@ h1 {
 }
 .flex-row {
     display: flex;
-    align-items: space-between;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .project-description {
     margin-left: 30px;
@@ -281,5 +281,8 @@ button:hover {
   @media only screen and (max-width: 410px) {
     .project-img {
         width: 300px;
+    }
+    textarea, input {
+        width: 100%;
     }
   }
