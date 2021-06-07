@@ -42,8 +42,9 @@ body {
 }
 .nav {
     display: flex;
-    width: 50%;
+    width: 60%;
     justify-content: space-evenly;
+    align-items: center;
     font-size: 18px;
 }
 .section {
