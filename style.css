@@ -220,6 +220,15 @@ button:hover {
 .justify-start {
     justify-content: flex-start;
 }
+h2 {
+    display: flex;
+    align-items: center;
+}
+.fa-laptop-code, .fa-chalkboard-teacher, .fa-hiking {
+    color: aqua;
+    font-size: 50px;
+    margin-right: 20px;
+}
 
 @media only screen and (max-width: 1403px) {
     .header-content {
