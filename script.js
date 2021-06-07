@@ -1,26 +1,29 @@
 $(window).scroll(() => {
-    const scroll = $(window).scrollTop(); 
-    const htMain = $('#main').height();
-    const osMain = $('#main').offset().top;
-    const htProjects = $('#projects').height();
-    const osProjects = $('#projects').offset().top;
-    const htSkills = $('#skills').height();
-    const osSkills = $('#skills').offset().top;
-    const htAbout = $('#about').height();
-    const osAbout = $('#about').offset().top;
-    if (scroll < htMain+osMain) {
+    const $scrollArrow = $('#scroll-arrow');
+    $scrollArrow.hide();
+    
+    const $scroll = $(window).scrollTop();
+    const $htMain = $('#main').height();
+    const $osMain = $('#main').offset().top;
+    const $htProjects = $('#projects').height();
+    const $osProjects = $('#projects').offset().top;
+    const $htSkills = $('#skills').height();
+    const $osSkills = $('#skills').offset().top;
+    const $htAbout = $('#about').height();
+    const $osAbout = $('#about').offset().top;
+    if ($scroll < $htMain+$osMain) {
         blackBG();
         $('#projects-link').removeClass('featured');
-    } else if (scroll >= htMain && scroll < htProjects+osProjects) {
+    } else if ($scroll >= $htMain && $scroll < $htProjects+$osProjects) {
         whiteBG();
         $('#projects-link').addClass('featured');
-    } else if (scroll >= htProjects+osProjects && scroll < htSkills+osSkills) {
+    } else if ($scroll >= $htProjects+$osProjects && $scroll < $htSkills+$osSkills) {
         blackBG();
         $('#skills-link').addClass('featured');
-    } else if (scroll >= htSkills+osSkills && scroll < htAbout+osAbout) {
+    } else if ($scroll >= $htSkills+$osSkills && $scroll < $htAbout+$osAbout) {
         whiteBG();
         $('#about-link').addClass('featured');
-    } else if (scroll >= htAbout+osAbout) {
+    } else if ($scroll >= $htAbout+$osAbout) {
         blackBG();
         $('#contact-link').addClass('featured');
     };
