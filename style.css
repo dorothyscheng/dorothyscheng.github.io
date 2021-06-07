@@ -101,6 +101,8 @@ h1 {
     object-fit: cover;
     margin-top: 5%;
     margin-right: 50px;
+    border: 2px solid aqua;
+    padding: 5px;
 }
 .contact-list {
     display: flex;
