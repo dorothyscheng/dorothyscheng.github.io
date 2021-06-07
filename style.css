@@ -138,18 +138,8 @@ h1 {
 }
 .skill-text {
     width: 49%;
-}
-.shorter {
-    height: 200px;
-    width: 500px;
-    object-fit: cover;
-    border: none;
-}
-.shorter:hover {
-    border: none;
-}
-.contain {
-    object-fit: contain;
+    border: 2px solid aqua;
+    padding: 47px;
 }
 .form {
     align-items: flex-start;
@@ -221,7 +211,6 @@ button:hover {
     justify-content: flex-start;
 }
 h2 {
-    display: flex;
     align-items: center;
 }
 .fa-laptop-code, .fa-chalkboard-teacher, .fa-hiking {
@@ -294,6 +283,11 @@ h2 {
     .project-description {
         margin: 20px 0;
         line-height: 25px;
+    }
+    .skill-text {
+        width: 49%;
+        border: none;
+        padding: 10px 0;
     }
     .form {
         width: 90%;
