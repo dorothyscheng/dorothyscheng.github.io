@@ -128,7 +128,16 @@ h1 {
 }
 .skills {
     margin: 10px;
-    padding: 10px;
+    padding: 7px;
+    border: 4px solid aqua;
+}
+.skill-section {
+    min-height: 100vh;
+    justify-content: space-evenly;
+    width: 49%;
+}
+.skill-text {
+    width: 49%;
 }
 .shorter {
     height: 200px;
@@ -208,6 +217,9 @@ button:hover {
 .align-start {
     align-items: flex-start;
 }
+.justify-start {
+    justify-content: flex-start;
+}
 
 @media only screen and (max-width: 1403px) {
     .header-content {
@@ -282,6 +294,9 @@ button:hover {
     }
     .align-start {
         align-items: center;
+    }
+    .justify-start {
+        justify-content: center;
     }
   }
   @media only screen and (max-height: 610px) {
